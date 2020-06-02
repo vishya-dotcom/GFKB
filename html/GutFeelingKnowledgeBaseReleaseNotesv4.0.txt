@@ -1,0 +1,263 @@
+﻿FEATURES OF GutFeeling Knowledge Base (GFKB) v4.0-Master List and GutFeeling Knowledge Base v4.0-Epilepsy_Data 
+
+
+----------------------------------------------------------------
+Size: GFKB v4 Master List = 290 KB; GFKB v4 Epilepsy Data = 99KB
+Number of organisms: 188
+----------------------------------------------------------------
+Release Notes
+1) GFKB v4.0 includes organisms found in previous GFKB versions and also incorporates publically available data from a microbiome study of therapy resistant epileptic patients on ketogenic diet 
+   (https://www.nature.com/articles/s41522-018-0073-2). The fecal samples collected from this study underwent a two-step metagenomics pipeline, CensuScope and Hexagon, which identified the organisms present and their relative abudances. 
+2) GFKB v4.0 is now divided into two sheets. The first sheet is a "master list" of organisms with their associated metadata. 
+   The second sheet contains various statistical metrics associated with relative abundance derived from the aforementioned study.
+3) Two new columns were added, "Present in GFKB v3 (Y/N)" and "Present in GFKB_epilepsy v3 (Y/N)" which indicates whether that particular organism was present in the original GFKB and/or the new dataset included with this release (reference in note (1))
+4) GFKB v4.0 has a new key used as a unique identifier for each organism. The key or "Unique ID" is a concatenation of the UniProt ID and GenBank Accession number associated with an organism.
+5) GFKB v4.0 now includes genome size (in megabases) for all organisms.
+6) GFKB v4.0 has removed E. coli k12, a lab strain, and reassigned its abundance values and associated metrics to Escherichia coli H386/Escherichia coli P12b, which was found to have to highest co-occurrence and to be the most closely related organism for E. coli k12.
+7) Organisms which have multiple RefSeq Accession numbers corresponding to multiple chromosomes had their second chromosome’s Accession number moved to column I (“Plasmid/additional chromosome accessions”).
+8) Four of the organisms we have represented in our table are semi-redundant (UP000001360_AP010889 is semi-redundant to UP000001360_CP001095 and UP000000439_AE014295 is semi-redundant to UP000000439_LN824140).
+   By semi-redundant, it is meant that in each case a single uniprot ID matches to two GenBank Accession numbers. As a consequence, the Epilepsy tab has two rows which contain NA values. 
+   These two rows correspond to GenBank numbers which appear in our Organisms sheet but, due to their redundancy with other organisms in that list, do not map to a GenBank accession number associated with our epilepsy data.
+9) The square brackets ([ ]) around genus name were deleted for the following organisms:
+   - CP001104 Eubacterium eligens ATCC 27750 chromosome, complete genome
+   - CP001107 Eubacterium rectale ATCC 33656 chromosome, complete genome
+   - CP002109 Clostridium saccharolyticum WM1 chromosome, complete genome
+   - CP022464 Clostridium bolteae strain ATCC BAA-613 chromosome complete genome
+   - LN679998 Clostridium sordellii genome assembly ATCC9714_, chromosome : 1
+   - FP929037 Clostridium saccharolyticum-like K10 draft genome
+   - FP929042 Eubacterium rectale DSM 17629 draft genome
+   - FP929043 Eubacterium rectale M104/1 draft genome
+   - FP929044 Eubacterium siraeum 70/3 draft genome
+   - FP929059 Eubacterium siraeum V10Sc8a draft genome
+   According to NCBI taxonomy browser, square brackets ([ ]) around a genus indicates that the name awaits appropriate action by the research community to be transferred to another genus. 
+   These will be updated in following iterations and releases of the GFKB as information becomes available. 
+
+
+- '*' indicates proteomes which have been removed from UniProt since v2.6 and v3.0. 
+
+
+----------------------------------------------------------------
+Column Headers
+----------------------------------------------------------------
+Unique ID                                  A concatenation of UniProt ID and GenBank accession
+UP ID                                      UniProt accession for proteome file
+Present in GFKB v3 (Y/N)                   Whether or not this organism existed in the previous iteration of GFKB; "Y" indicating YES and "N" indicating NO  
+Present in GFKB_epilepsy v3 (Y/N)          Whether or not this organism existed in the data from the epilepsy study; "Y" indicating YES and "N" indicating NO.
+UP taxonomy                                UniProt taxonomic designation based on the proteome sequence file
+UP name                                    Scientific name based on the proteome sequence file
+Assembly ID (UP matched)                   NCBI or ENA accession for genome assembly file, matched to the assembly used for the UniProt proteome
+Genome Size (Mb)                           Number of megabases in the corresponding genome. Genome sizes were fetched from https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/
+RefSeq Accession                           RefSeq accession for sequence file, if it exists
+Plasmid/additional chromosome accessions   Additional NCBI accessions for associated plasmid sequence files
+GenBank Accession                          NCBI accession for sequence file
+GenBank record name                        Name of the NCBI sequence record (this is usually the scientific name with additional qualifiers about the sequence)
+NCBI taxonomy                              Taxonomic ID assigned to the sequence
+NCBI taxonomy name                         Taxonomic name assigned to the sequence
+Lineage( full )                            The complete taxonomic lineage as displayed at the top of the Taxonomy Browser or in the taxon information page from NCBI.  
+Characteristics                            Physical or other identifiable characteristics attributed to the organism based on primary sources (Uniprot curation notes and peer-reviewed PubMed papers)
+Effect/Function                            Specific effects or function attributed to the organism in the GI tract  based on primary sources
+Curation Notes                             Any additional notes about the organism's entries in the various cells
+
+
+
+
+
+
+SUMMARY
+-----------------------------------------------------------------
+UP ID        UP taxonomy        UP name
+UP000001410        199310        Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC)
+UP000000439        206672        Bifidobacterium longum (strain NCC 2705)
+UP000001414        226186        Bacteroides thetaiotaomicron (strain ATCC 29148 / DSM 2079 / NCTC 10582 / E50 / VPI-5482)
+UP000001978        272563        Peptoclostridium difficile (strain 630)
+UP000002197        295405        Bacteroides fragilis (strain YCH46)
+UP000008702        367928        Bifidobacterium adolescentis (strain ATCC 15703 / DSM 20083 / NCTC 11814 / E194a)
+UP000032727        941322        Escherichia coli O25b:H4-ST131
+UP000008842        431947        Porphyromonas gingivalis (strain ATCC 33277 / DSM 20709 / CIP 103683 / JCM 12257 / NCTC 11834 / 2561)
+UP000007255        565042        Bifidobacterium longum subsp longum (strain ATCC 15707 / DSM 20219 / JCM 1217 / NCTC 11818 / E194b)
+UP000001360        391904        Bifidobacterium longum subsp infantis (strain ATCC 15697 / DSM 20088 / JCM 1222 / NCTC 11817 / S12)
+UP000008150        565040        Bifidobacterium longum subsp infantis (strain 157F)
+UP000005219        693746        Oscillibacter valericigenes (strain DSM 18026 / NBRC 101213 / Sjm18-20)
+UP000007946        981540        Streptococcus pasteurianus (strain ATCC 43144 / JCM 5346 / CDC 1723-81)
+*UP000008929        502558        Eggerthella sp (strain YY7918)
+UP000003323        871562        Bifidobacterium dentium ATCC 27679
+UP000028988        1150460        Bifidobacterium kashiwanohense JCM 15439 = DSM 21854
+UP000015561        1226298        Lactobacillus paracasei subsp paracasei JCM 8130
+*UP000015924        1384484        Adlercreutzia equolifaciens DSM 19450
+UP000217431        28131        Prevotella intermedia
+UP000031657        216816        Bifidobacterium longum
+UP000268003        1351        Enterococcus faecalis (Streptococcus faecalis)
+UP000001170        264199        Streptococcus thermophilus (strain ATCC BAA-250 / LMG 18311)
+UP000002861        435590        Bacteroides vulgatus (strain ATCC 8482 / DSM 1447 / JCM 5826 / NBRC 14291 / NCTC 11154)
+UP000000566        435591        Parabacteroides distasonis (strain ATCC 8503 / DSM 20701 / CIP 104284 / JCM 5825 / NCTC 11152)
+UP000001952        364106        Escherichia coli (strain UTI89 / UPEC)
+UP000024500        1415776        Streptococcus thermophilus TH1435
+UP000002419        205913        Bifidobacterium longum (strain DJO10A)
+UP000001992        420247        Methanobrevibacter smithii (strain ATCC 35061 / DSM 861 / OCM 144 / PS)
+UP000242549        580165        Bacillus cytotoxicus
+UP000002407        360107        Campylobacter hominis (strain ATCC BAA-381 / LMG 19568 / NCTC 13146 / CH001A)
+UP000002359        423211        Streptococcus suis (strain GZ1)
+UP000000370        357809        Lachnoclostridium phytofermentans (strain ATCC 700394 / DSM 18823 / ISDg) (Clostridium phytofermentans)
+UP000007011        439855        Escherichia coli (strain SMS-3-5 / SECEC)
+UP000001031        349741        Akkermansia muciniphila (strain ATCC BAA-835 / Muc)
+UP000001360        391904        Bifidobacterium longum subsp. infantis (strain ATCC 15697 / DSM 20088 / JCM 1222 / NCTC 11817 / S12)
+UP000001476        515620        Eubacterium eligens (strain ATCC 27750 / VPI C15-48)
+UP000001477        515619        Agathobacter rectalis (strain ATCC 33656 / DSM 3377 / JCM 17463 / KCTC 5835 / VPI 0990) (Eubacterium rectale)
+UP000006173        484020        Bifidobacterium bifidum BGN4
+UP000002294        525919        Anaerococcus prevotii (strain ATCC 9321 / DSM 20548 / JCM 6508 / PC1) (Peptostreptococcus prevotii) (Peptococcus prevotii)
+UP000001377        479437        Eggerthella lenta (strain ATCC 25559 / DSM 2243 / JCM 9979 / NCTC 11813 / VPI 0255) (Eubacterium lentum)
+UP000007968        479436        Veillonella parvula (strain ATCC 10790 / DSM 2008 / JCM 12972 / Te3) (Veillonella alcalescens)
+UP000002312        702459        Bifidobacterium bifidum (strain PRL2010)
+UP000001888        553190        Gardnerella vaginalis (strain 409-05)
+UP000008234        699246        Mageeibacillus indolicus (strain UPII9-5) (Clostridiales genomosp BVAB3 (strain UPII9-5))
+UP000001902        591001        Acidaminococcus fermentans (strain ATCC 25085 / DSM 20731 / VR4)
+UP000041838        244366        Klebsiella variicola
+UP000000927        264731        Prevotella ruminicola (strain ATCC 19189 / JCM 8958 / 23)
+UP000006740        759350        Bifidobacterium longum subsp longum (strain JDM301)
+UP000057640        32022        Campylobacter jejuni subsp jejuni
+UP000001662        610130        Clostridium saccharolyticum (strain ATCC 35040 / DSM 2544 / NRCC 2533 / WM1)
+UP000001498        553174        Prevotella melaninogenica (strain ATCC 25845 / DSM 7089 / JCM 6325 / VPI 2381 / B282) (Bacteroides melaninogenicus)
+UP000006869        883062        Bifidobacterium bifidum (strain S17)
+UP000006873        903814        Eubacterium limosum (strain KIST612)
+UP000232637        216816        Bifidobacterium longum
+UP000193045        656397        Escherichia coli H386
+UP000008630        693979        Bacteroides helcogenes (strain ATCC 35417 / DSM 20613 / JCM 6297 / P 36-108)
+UP000001551        663278        Ethanoligenens harbinense (strain DSM 18485 / JCM 12961 / CGMCC 15033 / YUAN-3)
+UP000007486        667015        Bacteroides salanitronis (strain DSM 18170 / JCM 13567 / BL78)
+UP000006657        709991        Odoribacter splanchnicus (strain ATCC 29572 / DSM 20712 / CIP 104287 / JCM 15291 / NCTC 10825 / 1651/6) (Bacteroides splanchnicus)
+UP000006860        756272        Rubinisphaera brasiliensis (strain ATCC 49424 / DSM 5305 / JCM 21570 / NBRC 103401 / IFAM 1448) (Planctomyces brasiliensis)
+UP000008137        767031        Prevotella denticola (strain F0289)
+UP000006852        869209        Treponema succinifaciens (strain ATCC 33096 / DSM 2489 / 6091)
+UP000006545        879243        Porphyromonas asaccharolytica (strain ATCC 25260 / DSM 20707 / BCRC 10618 / JCM 6326 / LMG 13178 / VPI 4198) (Bacteroides asaccharolyticus)
+UP000008464        696406        Escherichia coli UMNK88
+UP000008938        1035817        Bifidobacterium longum subsp longum KACC 91563
+UP000008881        1028307        Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006) (Enterobacter aerogenes)
+UP000001502        760570        Streptococcus parasanguinis (strain ATCC 15912 / DSM 6778 / CIP 104372 / LMG 14537)
+UP000000293        1046629        Streptococcus salivarius (strain 57I)
+UP000001279        1069534        Lactobacillus ruminis (strain ATCC 27782 / RF3)
+UP000008178        585394        Roseburia hominis (strain DSM 16839 / NCIMB 14029 / A2-183)
+UP000007093        568816        Acidaminococcus intestini (strain RyC-MR95)
+UP000003506        679194        Propionibacterium acnes J139
+UP000004525        525361        Lactobacillus rhamnosus LMS2-1
+UP000002865        1114965        Streptococcus parasanguinis FW213
+UP000005436        203275        Tannerella forsythia (strain ATCC 43037 / JCM 10827 / FDC 338) (Bacteroides forsythus)
+UP000006052        679935        Alistipes finegoldii (strain DSM 17242 / JCM 16770 / AHN 2437 / CCUG 46020 / CIP 107999)
+UP000006167        1133852        Escherichia coli O104:H4 (strain 2011C-3493)
+UP000190755        1352        Enterococcus faecium (Streptococcus faecium)
+UP000010862        908937        Prevotella dentalis (strain ATCC 49559 / DSM 3688 / JCM 13448 / NCTC 12043 / ES 2772) (Mitsuokella dentalis)
+UP000010099        246198        Prevotella intermedia (strain 17)
+UP000002895        768486        Enterococcus hirae (strain ATCC 9790 / DSM 20160 / JCM 8729 / LMG 6399 / NBRC 3181 / NCIMB 6459 / NCDO 1258)
+UP000015929        575614        Prevotella sp oral taxon 299 str. F0039
+UP000006306        358220        Acidovorax sp KKS102
+UP000001978        272563        Peptoclostridium difficile (strain 630) (Clostridium difficile)
+UP000019772        1268072        Paenibacillus sabinae T27
+UP000198230        54291        Raoultella ornithinolytica (Klebsiella ornithinolytica)
+UP000011835        1254439        Bifidobacterium thermophilum RBL67
+UP000007843        1006551        Klebsiella oxytoca (strain ATCC 8724 / DSM 4798 / JCM 20051 / NBRC 3318 / NRRL B-199 / KCTC 1686)
+UP000000799        192222        Campylobacter jejuni subsp jejuni serotype O:2 (strain ATCC 700819 / NCTC 11168)
+UP000006381        272621        Lactobacillus acidophilus (strain ATCC 700396 / NCK56 / N2 / NCFM)
+UP000014070        1295009        Methanomassiliicoccus intestinalis (strain Issoire-Mx1)
+UP000028585        1344042        Enterococcus faecium T110
+UP000183509        1352        Enterococcus faecium (Streptococcus faecium)
+UP000019336        1385940        Bifidobacterium breve JCM 7019
+UP000232467        1685        Bifidobacterium breve
+UP000030089        1300227        Bifidobacterium longum subsp longum GT15
+UP000017161        1399116        Lactococcus lactis subsp lactis KLDS 4.0325
+UP000017124        1156433        Streptococcus sp I-P16
+UP000006051        867902        Ornithobacterium rhinotracheale (strain ATCC 51463 / DSM 15997 / CCUG 23171 / CIP 104009 / LMG 9086)
+UP000018901        880074        Barnesiella viscericola DSM 18177
+UP000066984        195        Campylobacter coli
+UP000007097        585056        Escherichia coli O17:K52:H18 (strain UMN026 / ExPEC)
+UP000028581        1680        Bifidobacterium adolescentis
+UP000030625        1447716        Bifidobacterium kashiwanohense PV20-2
+UP000025226        1333848        Citrobacter freundii CFNIH1
+UP000028584        357276        Bacteroides dorei
+UP000027602        796606        Bacillus methanolicus MGA3
+UP000018115        1262754        Bacteroides sp CAG:98
+UP000002042        552531        Bifidobacterium animalis subsp lactis (strain BB-12)
+UP000063149        357276        Bacteroides dorei
+UP000031758        745156        Escherichia coli 1303
+UP000029666        573        Klebsiella pneumoniae
+UP000031386        33033        Parvimonas micra
+UP000030317        562        Escherichia coli
+UP000030306        1304        Streptococcus salivarius
+UP000006877        316401        Escherichia coli O78:H11 (strain H10407 / ETEC)
+UP000066721        1681        Bifidobacterium bifidum
+UP000031405        1680        Bifidobacterium adolescentis
+UP000037363        1491        Clostridium botulinum
+UP000002032        469008        Escherichia coli (strain B / BL21-DE3)
+UP000255401        817        Bacteroides fragilis
+UP000064844        1297617        Intestinimonas butyriciproducens
+UP000004019        997877        Bacteroides dorei CL03T12C01
+UP000232402        216816        Bifidobacterium longum
+UP000188159        649756        Anaerostipes hadrus
+UP000061809        246787        Bacteroides cellulosilyticus
+UP000066931        818        Bacteroides thetaiotaomicron 7330
+UP000005475        411476        Bacteroides ovatus (strain ATCC 8483 / DSM 1896 / JCM 5824 / NCTC 11153)
+UP000061587        821        Bacteroides vulgatus mpk
+UP000189432        1496        Clostridioides difficile (Peptoclostridium difficile)
+UP000092631        1796613        Bacteroides caecimuris
+UP000092604        1834207        Erysipelotrichaceae bacterium I46
+UP000092639        292800        Flavonifractor plautii YL31
+UP000235992        239935        Akkermansia muciniphila YL44
+UP000232133        2173        Methanobrevibacter smithii KB11
+UP000232891        564423        Pseudomonas tolaasii
+UP000001377        479437        Eggerthella lenta (strain ATCC 25559 / DSM 2243 / JCM 9979 / NCTC 11813 / VPI 0255) (Eubacterium lentum)
+UP000003325        47678        Bacteroides caccae ATCC 43185
+UP000003755        537007        Blautia hansenii DSM 20583
+UP000005396        411902        Clostridium bolteae (strain ATCC BAA-613 / WAL 16351)
+UP000004619        853        Faecalibacterium prausnitzii
+UP000215169        2025876        Parabacteroides sp. CT06
+UP000223709        853        Faecalibacterium prausnitzii
+UP000225608        74426        Collinsella aerofaciens (Strain: indica)
+UP000238983        2094242        Victivallales bacterium CCUG 44730
+UP000241454        1680        Bifidobacterium adolescentis 1-11
+UP000006731        272559        Bacteroides fragilis (strain ATCC 25285 / DSM 2151 / JCM 11019 / NCTC 9343)
+UP000008614        685038        Escherichia coli O83:H1 (strain NRG 857C / AIEC)
+UP000002166        349519        Leuconostoc citreum (strain KM20)
+UP000002070        645463        Peptoclostridium difficile (strain R20291) (Clostridium difficile)
+UP000008563        365659        Streptococcus mitis (strain B6)
+UP000003227        525259        Clostridioides difficile NAP08
+UP000093938        548        Klebsiella aerogenes (Enterobacter aerogenes)
+*UP000008794        717959        Alistipes shahii WAL 8301
+UP000008795        657309        Bacteroides xylanisolvens XB1A
+UP000007063        722911        Bifidobacterium longum subsp longum F8
+UP000008797        717608        Clostridium cf saccharolyticum K10
+UP000008798        717962        Coprococcus catus GD/7
+*UP000008799        751585        Coprococcus sp ART55/1
+*UP000008801        717960        Faecalitalea cylindroides T2-87
+UP000007057        657318        Eubacterium rectale DSM 17629
+UP000008802        657317        Eubacterium rectale M104/1
+UP000008803        657319        Eubacterium siraeum 70/3
+UP000008804        718252        Faecalibacterium prausnitzii L2-6
+UP000007059        657322        Faecalibacterium prausnitzii SL3/3
+*UP000008805        657308        Gordonibacter pamelaeae 7-10-1-b
+UP000198801        1855330        Megamonas sp Calf98-2
+UP000008807        657315        Roseburia intestinalis M50/1
+UP000008953        718255        Roseburia intestinalis XB6B4
+UP000198616        40518        Ruminococcus bromii
+UP000007054        213810        Ruminococcus champanellensis (strain DSM 18848 / JCM 17042 / KCTC 15320 / 18P13)
+UP000007055        657323        Ruminococcus sp SR1/5
+UP000008955        657314        Blautia obeum A2-162
+UP000008956        657313        Ruminococcus torques L2-14
+UP000007050        717961        Eubacterium siraeum V10Sc8a
+*UP000008959        245012        butyrate-producing bacterium SM4/1
+UP000008960        649756        Anaerostipes hadrus
+UP000008961        245014        butyrate-producing bacterium SS3/4
+UP000007052        862965        Haemophilus parainfluenzae (strain T3T1)
+UP000008560        862962        Bacteroides fragilis (strain 638R)
+UP000000508        1048332        Streptococcus salivarius (strain CCHSS3)
+UP000234759        1304        Streptococcus salivarius
+UP000027600        1160721        Ruminococcus bicirculans
+UP000188305        1255690        Sphingobacterium faecium PCAi_F25
+UP000032417        1562970        Fermentimonas caenicola
+UP000032801        1505        Paeniclostridium sordellii (Clostridium sordellii)
+UP000000439        206672        Bifidobacterium longum (strain NCC 2705)
+UP000175666        1379690        Bacteroides ovatus V975
+
+
+
+
+DISCLAIMER
+-----------------------------------------------------------------
+This material is not intended to be used as a regulatory standard.

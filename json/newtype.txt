@@ -1,0 +1,1 @@
+{ "typedata" : {"name":"", "title":"", "description":"", "parent":"", "is_virtual_fg":"0", "prefetch_fg":"0", "fields":[]},"sqllist" : ""}
