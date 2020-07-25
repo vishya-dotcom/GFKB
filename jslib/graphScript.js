@@ -1,4 +1,4 @@
-d3.csv("GFKB_Original_RelativeAbundances.csv", d3.autoType).then(function(data, rows) {
+d3.csv("content/GFKB_Original_RelativeAbundances.csv", d3.autoType).then(function(data, rows) {
   var graphData = [];
 
   // pruning and handling of data
