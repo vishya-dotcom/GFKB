@@ -1,7 +1,3 @@
-# Gut Feeling Knowledgebase
-Gut feeling knowledgebase is a reference database of healthy human gut microbiome.
-
-
 Steps to get this up and running on the website:
 
 1. Take graphScript.js and put it in the folder with the rest of the JS scripts (if that doesn't exist then just put it wherever it makes sense for you)
