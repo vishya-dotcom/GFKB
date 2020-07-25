@@ -5,7 +5,7 @@ Gut feeling knowledgebase is a reference database of healthy human gut microbiom
 Steps to get this up and running on the website:
 
 1. Take graphScript.js and put it in the folder with the rest of the JS scripts (if that doesn't exist then just put it wherever it makes sense for you)
-2. You're going to want to put the following lines either at the bottom right before the </body> in page.about.html, or in the <head> of whichever file handles the importing of the CSS files (I don't have access to it so I'm not sure which file that is):
+2. You're going to want to put the following lines either at the bottom right before the `</body>` in page.about.html, or in the `<head>` of whichever file handles the importing of the CSS files (I don't have access to it so I'm not sure which file that is):
   	<script src="https://d3js.org/d3.v5.min.js"></script>
   	<script src="graphScript.js"></script>
     NOTE: For the second one, importing "graphScript.js," the path will change depending on what folder you're putting it in. If you need help with this part let me know.
